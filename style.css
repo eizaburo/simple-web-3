@@ -14,12 +14,11 @@ header {
     background-color: #333;
     color: #fff;
     padding: 20px;
-}
-
-header nav {
     display: flex;
     justify-content: space-between;
 }
+
+header nav {}
 
 header ul {
     display: flex;
@@ -119,7 +118,7 @@ footer {
     padding: 20px;
 }
 
-.contact-form label{
+.contact-form label {
     margin-top: 20px;
 }
 
@@ -143,17 +142,17 @@ footer {
     background-color: #999;
 }
 
-.contact-form button:disabled{
+.contact-form button:disabled {
     background-color: #aaa;
     color: #666;
 }
 
-.error-message{
+.error-message {
     color: #f00;
     font-size: 0.8rem;
     display: none;
 }
 
-.error-message.show{
+.error-message.show {
     display: block;
 }
