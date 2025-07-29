@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+}
+
+header li {
+    list-style: none;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+header a:hover {
+    color: #aaa;
+}
+
+.hero {
+    background-color: #aaa;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    color: #fff;
+}
+
+.hero p {
+    color: #fff;
+}
+
+main {
+    flex: 1;
+}
+
+.services {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.service {
+    background-color: #aaa;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service h2 {
+    color: #fff;
+    font-size: 1.0rem;
+}
+
+.service p {
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+@media (max-width:800px) {
+    .services {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .service {
+        height: 120px;
+        width: 80%;
+    }
+}
+
+footer {
+    margin-top: 40px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Contact */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 10px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.contact-form label{
+    margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 8px;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-form button:hover {
+    background-color: #666;
+}
+
+.contact-form button:active {
+    background-color: #999;
+}
+
+.contact-form button:disabled{
+    background-color: #aaa;
+    color: #666;
+}
+
+.error-message{
+    color: #f00;
+    font-size: 0.8rem;
+    display: none;
+}
+
+.error-message.show{
+    display: block;
+}
